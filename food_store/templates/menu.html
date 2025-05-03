@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+    </head>
+    <body>
+        <h2>Our Menu</h2>
+        <ul>
+            {% for food in foods %}
+            <li>{{ food.name }} - {{ food.price }} Ks</li>
+            {% endfor %}
+        </ul>
+        <a href="/templates/cart.html"></a>
+    </body>
+</html>
